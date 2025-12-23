@@ -1,0 +1,49 @@
+1. What is a Data Structure?
+-Way of organising the data in a computer for access and use.
+-Types:
+ -Linear Data Structure : Data arranged sequentially , elements attached.
+ -Non Linear Data Structure : Not arranged sequentially.
+
+2. Arrays?
+-Linear Data Structure.
+-Stores in contiguous memory 
+ -C/C++: contiguous block of actual elements
+ -Python / JS:
+  -The array/list stores references contiguously
+  -The actual objects may live elsewhere
+-Offers:
+ -Random access
+ -Cache Freindliness
+-Why O(1)?
+ -Calculation > Searching
+  -Formula : Address(arr[i]) = Base_Address + ( i × Size_of_Element )
+-Limitation?
+ -Fixed Size
+ -Contiguous Memory location
+ -Costly insertion and deletion
+ -Poor flexibility
+-Dynamic vs Static Array?
+Aspect	        Static Array	Dynamic Array
+Memory Location	Stack	        Heap
+Size Decision	Compile-time	Runtime
+Resizing	    Not possible	Possible (costly)
+Deallocation	Automatic	    Manual
+Speed	        Faster	        Slightly slower
+Risk	        Stack overflow	Memory leak
+
+
+3. Leetcode 344
+-Use swap until index n/2
+-Cannot reduce down beyond O(n), because reversal is a linear information problem = linear time.
+
+4. Leetcode 1672
+-Find sum of each row
+-Compare with maxSum.
+-Time Comlexity : O(mxn)
+
+5. Leetcode 1752
+-Rotation happens around a point.
+-Find drop point(s).
+-Increase dropCount.
+-If dropCount > 1 , return false.
+-Time Complexity : O(n)
