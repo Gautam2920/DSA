@@ -1,0 +1,37 @@
+1. Sliding Window Technique?
+- Used for subarray or substring or window.
+
+- Maintains a range , which moves step-by-step , updates result incrementally.
+
+- Uses prev window result to do computations for next window.
+
+- Types:
+ - Fixed Size Sliding Window:
+  - Fix the size of window.
+  - Operate first window.
+  - Slide window by 1.
+ - Variable Size Sliding Window:
+  - Increase right pointer one-by-one to meet conditions.
+  - In case of condition not matching , decrease size of left pointer by one.
+  - Match condition and move right pointer by one.
+  - Loop till the end of the array.
+
+- Time Complexity : O(n)
+
+- Leetcode 643:
+ - Fixed Sliding Window Problem.
+ - Initialise currentSum
+ - Add elements of the window 0 to k-1
+ - initiale maxSum and add currentSum to it.
+ - add new element to the window and subtract the first element in the window
+ - update maxSum if currentSum > maxSum
+ - loop until n-1 elements
+ - return maxSum / k.
+ - Time Comlexity : O(n)
+
+- Leetcode 121:
+ - for number of days < 3 , return
+ - track currentProfit by comparing todayPrice with minPricetSoFar
+ - currentProfit > maxProfit , maxProfit = currentProfit.
+
+- Leetcode
