@@ -1,0 +1,27 @@
+1. Two Pointer?
+ - tracking two indices.
+ - one pointer - linear scan while two pointer - structure + constraint
+
+ - Types:
+  -Same direction :
+  - Starts from same end.
+  - Opposite direction :
+   - Starts from both ends and moves inward.
+
+ - Shrinking search space:
+  - Moves indexes closer to reduce the space.
+
+2. Prefix Sum? :
+ - Compute once , store , dont compute again.
+ - reduces time complexity
+ - prefix[i] = prefix[i-1] + nums[i]
+
+- Leetcode 1480:
+ - simple prefix sum logic.
+
+-Leetcode 167:
+ - Two opp direction pointer left and right
+ - currentSum = nums[left] + nums[right]
+ - equal to target? return index +1
+ - too big? right--
+ - too small? left++ 
