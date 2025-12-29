@@ -19,9 +19,28 @@
 - Leetcode 1480:
  - simple prefix sum logic.
 
--Leetcode 167:
+- Leetcode 167:
  - Two opp direction pointer left and right
  - currentSum = nums[left] + nums[right]
  - equal to target? return index +1
  - too big? right--
  - too small? left++ 
+
+- Leetcode 209:
+ - Use two pointers and sliding window.
+ - track sum and minLength
+ - add numbers to sum until sum >= target
+ - check if smaller subarray is possible.
+
+- Leetcode 560:
+ - add element to sum
+ - if sum - k exist in the map
+ - count++
+ - map sum - k
+ - return count
+
+- Leetcode 1493:
+ - use sliding window
+ - track zero count
+ - for zeroCount > 1 , check left , if zero , left-- , update zeroCount
+ - track maxLen as max(maxLen , right - left)
