@@ -1,0 +1,43 @@
+ 1. Hash Maps?
+  - Data structure used to store key value pairs-
+  - Helps replace O(n2) approach by reducing the time complexity to constant time lookups.
+  - Store the info once and retrieve it in O(1) avg time
+
+ 2. Frequency Maps?
+  - Key represents the identity of data and value represents the information about the identity
+
+ 3. Prefix Maps?
+  - Used to know how many time a required previous prefixSum has occured.
+
+ 4. Strings?
+  - There is no such thing as a “string problem.” There are array problems with character constraints.
+  - Arrays of Characters
+  - Substring uses slidingWindow , twoPointer etc
+
+ 5. Recursion?
+  - Each recursive call is a paused state.
+  - It is simply function calls stacked on top of each other.
+  - Needs a base case to avoid stack overflow.
+  - Deep recursion may cause stack overflow if the recursion depth exceeds stack capacity.
+
+ - Leetcode 242:
+  - Diff len , false
+  - create freq map empty
+  - traverse s , count++
+  - traverse t , count--
+  - for count < 0 , false
+  - complete traversal , true
+
+ - Leetcode 387:
+  - traverse s , count++ in map
+  - traverse s again 
+  - first char with freq == 1 
+  - return char
+
+ - Leetcode 217:
+  - define hash set 
+  - traverse the array and keep count
+  - if count > 1 , true
+  - else false
+
+ 
