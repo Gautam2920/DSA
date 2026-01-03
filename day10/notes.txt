@@ -1,0 +1,14 @@
+1. Stack?
+ - A data structure which can be visualised in a form of a pile where you can only interact with the top.
+ - Follows the principle of Last-In-First-Out (LIFO).
+ - Stacked plates , browser history , undo functions.
+ - Why stack and not array? It enforces order of resolution , not just storage.
+
+2. Strings - Stacks?
+ - Strings are a timeline of characters that may or may not get along with their past.
+ - Push = delaying and pop means cancelling the elements
+
+3. Monotonic Stack?
+ - A stack that maintains an order so future elements can resolve past ones efficiently.
+
+" The top of the string is the most recent character whos fate is still undecided. "
